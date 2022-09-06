@@ -15,6 +15,9 @@ public class Exercicio01 {
         double resultado = base * altura;
 
         System.out.println("A área do triângulo é: " + resultado);
+
+
     }
 
 }
+
