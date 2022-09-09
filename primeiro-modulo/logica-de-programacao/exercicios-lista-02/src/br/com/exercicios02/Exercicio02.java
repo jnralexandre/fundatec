@@ -12,7 +12,8 @@ public class Exercicio02 {
         System.out.println("Agora informe sua idade: ");
         int idade = teclado.nextInt();
 
-        System.out.printf("Olá, seu nome é: %s, e a sua idade é: %d", nome, idade);
+        System.out.printf("Olá, seu nome é: %s; " +
+                "\nE a sua idade é: %d", nome, idade);
     }
 
 }

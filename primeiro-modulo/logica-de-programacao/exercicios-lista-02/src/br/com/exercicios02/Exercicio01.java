@@ -15,7 +15,9 @@ public class Exercicio01 {
         System.out.println("Agora informe o seu nome: ");
         String nomeCliente = teclado.nextLine();
 
-        System.out.printf("Olá, você mora no estado: %s, sua cidade é: %s, e seu nome é: %s", nomeEstado, nomeCidade, nomeCliente);
+        System.out.printf("Olá, você mora no estado: %s;" +
+                " \nSua cidade é: %s; " +
+                "\nE seu nome é: %s", nomeEstado, nomeCidade, nomeCliente);
     }
 
 }

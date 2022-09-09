@@ -15,7 +15,9 @@ public class Exercicio03 {
         System.out.println("Por último informe seu salário: ");
         double salarioCliente = teclado.nextDouble();
 
-        System.out.printf("Olá, seu nome é: %s; \nsua profissão é: %s; \ne o seu salário é de: RS " +
+        System.out.printf("Olá, seu nome é: %s; " +
+                "\nSua profissão é: %s; \n" +
+                "E o seu salário é de: RS " +
                 "%.2f ", nomeCliente, profissaoCliente, salarioCliente);
     }
 
