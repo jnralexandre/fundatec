@@ -9,10 +9,10 @@ public class Exercicio02 {
         Scanner teclado = new Scanner(System.in);
         String nome = teclado.nextLine();
 
-        System.out.println("Informe sua idade: ");
+        System.out.println("Agora informe sua idade: ");
         int idade = teclado.nextInt();
 
-        System.out.printf("Olá, seu nome é: %s, e sua idade é: %d", nome, idade);
+        System.out.printf("Olá, seu nome é: %s, e a sua idade é: %d", nome, idade);
     }
 
 }

@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Exercicio01 {
 
     public static void main(String[] args) {
-        System.out.println("Informe o nome do seu estado: ");
+        System.out.println("Informe o nome do estado em que você mora: ");
         Scanner teclado = new Scanner(System.in);
-        String estado = teclado.nextLine();
+        String nomeEstado = teclado.nextLine();
 
-        System.out.println("Informe o nome da sua cidade: ");
-        String cidade = teclado.nextLine();
+        System.out.println("Informe o nome da cidade em que você mora: ");
+        String nomeCidade = teclado.nextLine();
 
-        System.out.println("Informe o seu nome: ");
-        String nome = teclado.nextLine();
+        System.out.println("Agora informe o seu nome: ");
+        String nomeCliente = teclado.nextLine();
 
-        System.out.printf("Olá, você mora no estado: %s, na cidade: %s, e seu nome é: %s", estado, cidade, nome);
+        System.out.printf("Olá, você mora no estado: %s, sua cidade é: %s, e seu nome é: %s", nomeEstado, nomeCidade, nomeCliente);
     }
 
 }
