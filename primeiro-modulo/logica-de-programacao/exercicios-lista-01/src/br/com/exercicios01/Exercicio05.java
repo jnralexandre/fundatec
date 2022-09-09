@@ -14,7 +14,7 @@ public class Exercicio05 {
 
         int resultado = primeiroNumero / segundoNumero;
 
-        System.out.println("O resultado da divisão dos dois números é: " + resultado);
+        System.out.println("O resultado da divisão dos dois números informados é: " + resultado);
     }
 
 }

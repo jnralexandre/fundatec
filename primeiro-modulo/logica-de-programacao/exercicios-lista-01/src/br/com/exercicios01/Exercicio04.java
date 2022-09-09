@@ -14,7 +14,7 @@ public class Exercicio04 {
 
         int resultado = primeiroNumero * segundoNumero;
 
-        System.out.println("O resultado da multiplicação dos dois números é: " + resultado);
+        System.out.println("O resultado da multiplicação dos dois números informados é: " + resultado);
     }
 
 }
