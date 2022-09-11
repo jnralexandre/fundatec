@@ -19,9 +19,9 @@ public class Exercicio03 {
 
         double percentualVotosValidos = quantidadeVotosValidos - (quantidadeVotosBrancos + quantidadeVotosNulos);
 
-        double percentualVotosBrancos = quantidadeVotosBrancos - quantidadeVotosValidos + quantidadeVotosNulos;
+        //double percentualVotosBrancos =;
 
-        System.out.printf("Número total de eleitores: %d; %nA porcentagem de votos válidos é: %.2f%s%nA porcentagem de votos brancos é: %.2f%s", quantidadeTotalEleitores, percentualVotosValidos, "%", percentualVotosBrancos, "%");
+        System.out.printf("Número total de eleitores : %d; %nA porcentagem de votos válidos é: %.2f%s%nA porcentagem de votos brancos é: %.2f%s", quantidadeTotalEleitores, percentualVotosValidos, "%", percentualVotosBrancos, "%");
     }
 
 }
