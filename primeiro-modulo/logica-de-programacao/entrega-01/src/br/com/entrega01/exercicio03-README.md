@@ -1,0 +1,1 @@
+3) Faça um programa que leia 4 notas digitadas pelo usuário e imprima a média das notas.
