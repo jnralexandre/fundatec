@@ -17,7 +17,6 @@ public class Exercicio02 {
         System.out.println("Agora informe a cidade em que você mora: ");
         String cidadeCliente = teclado.nextLine();
 
-
         System.out.printf("Olá, meu nome é %s, tenho %d anos e moro em %s.", nomeCliente, idadeCliente, cidadeCliente);
     }
 
