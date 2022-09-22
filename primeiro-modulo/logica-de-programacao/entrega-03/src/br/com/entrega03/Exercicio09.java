@@ -19,6 +19,8 @@ public class Exercicio09 {
 
         if (somaValorAComValorB >= valorC) {
             System.out.printf("A soma dos valores A + B são maiores que valor C.%nSoma de A + B: %f, valor C: %f", somaValorAComValorB, valorC);
+        } else {
+            System.out.printf("A soma dos valores A + B são menores que valor C.%nSoma de A + B: %f, valor C: %f", somaValorAComValorB, valorC);
         }
     }
 
