@@ -1,2 +1,2 @@
 # Fundatec
-- Vou disponibilizar meus estudos neste repositório.
+- Este repositório é destinado aos exercícios que faço no meu curso.
