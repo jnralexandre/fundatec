@@ -19,6 +19,6 @@ h1 {
     color: aqua;
 }
 
-.link.hover {
-    
+.link:hover {
+    background-color: gray;
 }
