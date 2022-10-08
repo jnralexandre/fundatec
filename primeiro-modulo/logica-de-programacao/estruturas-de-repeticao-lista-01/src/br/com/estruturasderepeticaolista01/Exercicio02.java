@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercicio02 {
 
     public static void main(String[] args) {
-        System.out.println("Por favor, informe um número: ");
+        System.out.println("Por favor, informe um número inteiro positivo: ");
         Scanner teclado = new Scanner(System.in);
         int numero = teclado.nextInt();
         int soma = 0;
