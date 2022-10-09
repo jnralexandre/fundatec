@@ -11,7 +11,7 @@ public class Exercicio06 {
         int somaNumerosPositivos = 0;
         int quantidadeNumerosNegativos = 0;
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 20; i++) {
             System.out.println("Por favor, informe um número inteiro");
             numerosInformados = teclado.nextInt();
             if (numerosInformados > 0) {
