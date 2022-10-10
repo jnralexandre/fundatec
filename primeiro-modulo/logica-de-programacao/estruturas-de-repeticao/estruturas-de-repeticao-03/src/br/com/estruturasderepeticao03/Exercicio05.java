@@ -9,8 +9,8 @@ public class Exercicio05 {
         double circulo = 0;
 
         while (raio >= 0) {
-            Scanner teclado = new Scanner(System.in);
             System.out.println("Informe um valor para o raio: ");
+            Scanner teclado = new Scanner(System.in);
             raio = teclado.nextInt();
             circulo = pi * (raio * raio);
 
