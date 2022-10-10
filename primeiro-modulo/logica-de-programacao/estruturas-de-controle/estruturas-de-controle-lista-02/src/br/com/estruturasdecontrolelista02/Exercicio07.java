@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Exercicio07 {
 
     public static void main(String[] args) {
-//        7. Desenvolva um algoritmo que efetue a leitura de um valor inteiro e informe se o
-//        mesmo é maior que 10.
-
         System.out.println("Por favor, informe um número inteiro: ");
         Scanner teclado = new Scanner(System.in);
         int numeroInformado = teclado.nextInt();
