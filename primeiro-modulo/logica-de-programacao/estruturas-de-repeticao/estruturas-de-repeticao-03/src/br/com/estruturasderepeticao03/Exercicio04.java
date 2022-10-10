@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Exercicio04 {
 
     public static void main(String[] args) {
-
-        Scanner teclado = new Scanner(System.in);
-
         int valor1 = 0;
         int valor2 = 0;
         int valor3 = 0;
@@ -15,6 +12,7 @@ public class Exercicio04 {
 
         while (contador < 3) {
             System.out.println("Digite um valor: ");
+            Scanner teclado = new Scanner(System.in);
             int numero = teclado.nextInt();
 
             if (contador == 0) {
