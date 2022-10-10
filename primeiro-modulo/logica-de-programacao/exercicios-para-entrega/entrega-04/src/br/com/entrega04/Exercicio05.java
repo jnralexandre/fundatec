@@ -17,6 +17,7 @@ public class Exercicio05 {
         int quantidadeTotalMulheres = 0;
         int quantidadeTotalHomens = 0;
         int percentualHomens = 0;
+        int percentualTotalPopulacao = 100;
         String sinalPorcentagem = "%";
 
         for (int i = 0; i < populacaoTotal; i++) {
@@ -50,11 +51,7 @@ public class Exercicio05 {
             }
         }
 
-        if (quantidadeTotalHomens > quantidadeTotalMulheres) {
-            percentualHomens = (populacaoTotal - quantidadeTotalMulheres) * populacaoTotal;
-        } else {
-            percentualHomens = ((populacaoTotal - quantidadeTotalHomens) * populacaoTotal) / 245;
-        }
+        percentualHomens = (percentualTotalPopulacao / populacaoTotal) * quantidadeTotalHomens;
         mediaAlturaMulheres = somaAlturaMulheres / quantidadeTotalMulheres;
         mediaAlturaPopulacao = somaMediaAlturaPopulacao / populacaoTotal;
 
