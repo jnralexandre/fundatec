@@ -15,7 +15,7 @@ public class Exercicio02 {
         System.out.println("Agora, informe sua segunda nota: ");
         double segundaNota = teclado.nextDouble();
 
-        System.out.println("Agora, informe sua terceira nota: ");
+        System.out.println("Por fim, informe sua terceira nota: ");
         double terceiraNota = teclado.nextDouble();
 
         double mediaNotas = (primeiraNota + segundaNota + terceiraNota) / 3;
