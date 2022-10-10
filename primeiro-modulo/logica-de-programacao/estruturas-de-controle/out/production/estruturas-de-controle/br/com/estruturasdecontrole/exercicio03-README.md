@@ -1,1 +1,0 @@
-1) Escreva um algoritmo que receba 3 números e imprima o maior deles.
