@@ -1,4 +1,4 @@
-package br.com.entrega03;
+package br.com.estruturasdecontrolelista03;
 
 import java.util.Scanner;
 
