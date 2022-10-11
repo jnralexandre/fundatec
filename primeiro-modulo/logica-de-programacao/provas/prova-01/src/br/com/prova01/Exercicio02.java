@@ -24,7 +24,7 @@ public class Exercicio02 {
                 System.out.printf("%n%f", soma);
                 break;
             case 'B':
-                double percentualPrimeiroNumero = n1 - (n1 * 0.43);
+                double percentualPrimeiroNumero = n1 * 0.43;
                 System.out.printf("%n%f", percentualPrimeiroNumero);
                 break;
             case 'C':
