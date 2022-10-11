@@ -35,7 +35,7 @@ public class Exercicio06 {
             System.out.printf("%nb)%nOs número são todos iguais.");
         }
 
-        double mediaNumerosABC = numeroA + numeroB + numeroC / 3;
+        double mediaNumerosABC = (numeroA + numeroB + numeroC) / 3;
 
         System.out.printf("%nc)%nA média dos números é: %f", mediaNumerosABC);
     }
