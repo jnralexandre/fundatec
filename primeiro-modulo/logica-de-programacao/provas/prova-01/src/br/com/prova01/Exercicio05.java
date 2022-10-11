@@ -50,7 +50,7 @@ public class Exercicio05 {
         }
 
         double antecessorA = valorA - 1;
-        double sucessorB = valorB - 1;
+        double sucessorB = valorB + 1;
         double cuboC = Math.pow(valorC, 3);
 
         System.out.printf("%ne)%nO antecessor de valor A é: %f,%nO sucessor de valor B é: %f,%nO cubo de valor C é: %f", antecessorA, sucessorB, cuboC);
