@@ -11,6 +11,7 @@ public class Exercicio07 {
         int quantidadePositivos = 0;
         int somaNegativos = 0;
         int quantidadeNegativos = 0;
+        int quantidadeNumerosParesPositivos = 0;
 
         Scanner teclado = new Scanner(System.in);
 
@@ -30,12 +31,17 @@ public class Exercicio07 {
                 somaNegativos += numeroInformado;
                 quantidadeNegativos++;
             }
+
+            if (numeroInformado % 2 == 0) {
+                quantidadeNumerosParesPositivos++;
+            }
+
         }
 
         double mediaPositivos = somaPositivos / quantidadePositivos;
         double mediaNegativos = somaNegativos / quantidadeNegativos;
 
-        System.out.printf("a) A soma dos positivos é: %d%nb) A soma dos negativos é: %d%nc) A média dos positivos é: %f%nd) A média dos negativos é: %f%n", somaPositivos, somaNegativos, mediaPositivos, mediaNegativos);
+        System.out.printf("a) A soma dos positivos é: %d%nb) A soma dos negativos é: %d%nc) A média dos positivos é: %f%nd) A média dos negativos é: %f%ne) Quantidade de números pares positivos: %d", somaPositivos, somaNegativos, mediaPositivos, mediaNegativos, quantidadeNumerosParesPositivos);
     }
 
 }
