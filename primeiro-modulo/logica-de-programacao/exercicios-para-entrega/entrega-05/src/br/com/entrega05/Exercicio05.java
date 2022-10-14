@@ -10,7 +10,7 @@ public class Exercicio05 {
 
         Scanner teclado = new Scanner(System.in);
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 20; i++) {
             System.out.println("Por favor, informe seu peso: ");
             double pesoCliente = teclado.nextDouble();
 
@@ -22,8 +22,8 @@ public class Exercicio05 {
             totalIdades += idadeCliente;
         }
 
-        double mediaIdades = totalIdades / 2;
-        double mediaPesos = totalPesos / 2;
+        double mediaIdades = totalIdades / 20;
+        double mediaPesos = totalPesos / 20;
 
         System.out.printf("A média da idade das pessoas é: %f%nO total das idades é: %d%nA média dos pesos é: %f%nO total dos pesos é: %f", mediaIdades, totalIdades, mediaPesos, totalPesos);
     }
