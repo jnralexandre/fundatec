@@ -35,7 +35,7 @@ public class Exercicio03 {
             }
         }
 
-        System.out.printf("A quantidade de números informados foi: %d%nA soma de todos os números informados é: %d%nA soma dos pares é: %d%nA soma dos ímpares é: %d%n", quantidadeNumerosInformados, somaTodosNumeros, somaPares, somaImpares);
+        System.out.printf("a) A quantidade de números informados foi: %d%nb) A soma de todos os números informados é: %d%nc) A soma dos pares é: %d%nd) A soma dos ímpares é: %d%n", quantidadeNumerosInformados, somaTodosNumeros, somaPares, somaImpares);
     }
 
 }
