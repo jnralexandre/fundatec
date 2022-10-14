@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Exercicio02 {
 
     public static void main(String[] args) {
-//        2. Faça um programa que leia as médias finais de vários alunos de uma turma e mostre a maior média, a menor média e a média aritmética da turma.
-//        O programa para quando o usuário digitar uma média negativa.
 
         double mediaAlunos = 0;
         boolean continua = true;
