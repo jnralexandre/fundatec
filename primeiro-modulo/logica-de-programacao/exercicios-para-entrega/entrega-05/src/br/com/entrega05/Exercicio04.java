@@ -18,7 +18,7 @@ public class Exercicio04 {
 
             if (idadeCliente < 21 && idadeCliente >= 0) {
                 quantidadeIdadesMenores++;
-            } else if (idadeCliente > 50 && idadeCliente >= 0) {
+            } else if (idadeCliente > 50) {
                 quantidadeIdadesMaiores++;
             }
         }
