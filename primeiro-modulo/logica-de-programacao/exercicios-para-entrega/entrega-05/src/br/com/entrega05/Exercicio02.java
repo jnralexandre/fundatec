@@ -25,10 +25,9 @@ public class Exercicio02 {
                 break;
             }
 
-            if (mediaAlunos == 0) {
+            if (quantidadeMedias == 0) {
                 maiorMedia = mediaAlunos;
                 menorMedia = mediaAlunos;
-
             }
 
             if (mediaAlunos > maiorMedia) {
