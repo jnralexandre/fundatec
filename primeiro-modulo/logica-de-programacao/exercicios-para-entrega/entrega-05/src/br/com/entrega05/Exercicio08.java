@@ -9,10 +9,18 @@ public class Exercicio08 {
         Scanner teclado = new Scanner(System.in);
         int numeroInformado = teclado.nextInt();
 
-        if (numeroInformado % 1 == numeroInformado || numeroInformado % numeroInformado == 1) {
-            System.out.printf("O número é primo.");
+        if (numeroInformado <= 1) {
+            System.out.printf("O número: %d não é primo.", numeroInformado);
         } else {
-            System.out.println("Não é primo.");
+            for (int i = 2; i <= numeroInformado; i++) {
+                if (numeroInformado % i == 0) {
+                    if (i == numeroInformado) {
+                        System.out.printf("O número: %d é um primo.", numeroInformado);
+                    } else {
+                        System.out.printf("O número: %d não é primo.", numeroInformado);
+                    }
+                }
+            }
         }
     }
 
