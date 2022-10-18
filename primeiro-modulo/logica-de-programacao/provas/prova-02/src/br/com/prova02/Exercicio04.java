@@ -43,14 +43,6 @@ public class Exercicio04 {
 
             teclado.nextLine();
 
-            System.out.println("Você deseja continuar dando informações?: (S para Sim e N para não");
-            opcao = teclado.nextLine();
-
-            if (!opcao.equalsIgnoreCase("S")) {
-                continua = true;
-                break;
-            }
-
             if (contadorAlunos == 0) {
                 maiorMedia = 0;
                 menorMedia = 0;
@@ -62,6 +54,14 @@ public class Exercicio04 {
                 menorMedia = mediaAluno;
             }
 
+            System.out.println("Você deseja continuar dando informações?: (S para Sim e N para não");
+            opcao = teclado.nextLine();
+
+            if (!opcao.equalsIgnoreCase("S")) {
+                continua = true;
+                break;
+            }
+
             contadorAlunos++;
 
             System.out.printf("a) A maior média é: %f%nb) A menor média é: %f%nc) A média Aritmética da turma é: %f%n", maiorMedia, menorMedia, mediaAritmeticaTurma);
@@ -69,7 +69,7 @@ public class Exercicio04 {
 
         somaTotalNotas += mediaAluno;
 
-        mediaAritmeticaTurma += mediaAluno / contadorAlunos;
+        mediaAritmeticaTurma += somaTotalNotas / contadorAlunos;
     }
 
 }
