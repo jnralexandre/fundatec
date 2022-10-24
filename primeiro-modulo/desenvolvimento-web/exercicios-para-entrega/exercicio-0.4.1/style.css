@@ -1,0 +1,44 @@
+tr:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #cccfcd;
+}
+
+tr:hover {
+    background-color: blue;
+}
+
+a {
+    cursor: pointer;
+}
+
+.youtube {
+    border-radius: 100px;
+}
+
+.youtube {
+    color: #CC0000;
+}
+
+.instagram {
+    color: #EA0C5F;
+}
+
+.tiktok {
+    color: black;
+}
