@@ -22,6 +22,10 @@ public class Exercicio02 {
             if (alturaPedro == alturaJoao) {
                 System.out.printf("A quantidade de meses que Pedro demorou para alcançar a altura do João é: %d meses%nA altura atual do João é: %.2f metros %nA altura do Pedro é: %.2f metros", contadorPedro, alturaFinalJoao, alturaFinalPedro);
             }
+
+            if (alturaPedro == alturaJoao) {
+                continua = false;
+            }
         }
     }
 
