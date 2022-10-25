@@ -5,14 +5,6 @@ import java.util.Scanner;
 public class Exercicio01 {
 
     public static void main(String[] args) {
-//        1. O Detran do estado do RS, precisa de um sistema que efetue o cálculo de multas dos motoristas infratores.
-//        Faça um programa que leia a velocidade de um carro e a velocidade máxima para a rua, calcule e mostre as multas conforme tabela abaixo:
-//        i. Informe 50 reais se estiver até 10km/h acima;
-//        ii. Informe 100 reais se estiver entre 11km/h e 30km/h acima;
-//        iii. Informe 300 reais se estiver acima de 31km/h acima;
-//        O programa deve encerrar quando o usuário informar que não quer mais entrar com
-//        dados. Opção de leitura N ou S.
-
         Scanner teclado = new Scanner(System.in);
 
         boolean continua = true;
