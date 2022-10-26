@@ -19,7 +19,7 @@ tr:nth-child(odd):not(:first-child) {
     background-color: #cccfcd;
 }
 
-tr:hover {
+tr:hover:not(:first-child) {
     background-color: #267dc5;
 }
 
@@ -27,18 +27,23 @@ a {
     cursor: pointer;
 }
 
-.youtube {
-    border-radius: 100px;
+a.youtube {
+    background-color: #CC0000;
+    padding: 2px 10px;
+    border-radius: 50px;
+    color: white;
 }
 
-.youtube {
-    color: #CC0000;
+a.instagram {
+    background-color: #EA0C5F;
+    padding: 2px 10px;
+    border-radius: 50px;
+    color: white;
 }
 
-.instagram {
-    color: #EA0C5F;
-}
-
-.tiktok {
-    color: black;
+a.tiktok {
+    background-color: black;
+    padding: 2px 10px;
+    border-radius: 50px;
+    color: white;
 }
