@@ -1,5 +1,5 @@
 tr:nth-child(1) {
-    background-color: black;
+    background-color: #0d0d0d;
     color: white;
 }
 
@@ -20,7 +20,7 @@ tr:nth-child(odd):not(:first-child) {
 }
 
 tr:hover {
-    background-color: blue;
+    background-color: #267dc5;
 }
 
 a {
