@@ -3,9 +3,6 @@ package br.com.lista01arrays;
 public class Exercicio04 {
 
     public static void main(String[] args) {
-//        4. Crie um algoritmo que receba um valor qualquer. Após preencha um array com 20
-//        valores. Em um terceiro passo multiplique e imprima o resultado do valor recebido
-//        pelos valores armazenados no array.
         int numeroRecebido = 3;
 
         int[] numerosRecebidos = new int[20];
