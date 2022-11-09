@@ -16,7 +16,7 @@ public class Exercicio01 {
 
         int contador = 0;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < numerosInformados.length; i++) {
             if (numerosInformados[i] < 0) {
                 contador++;
             }
