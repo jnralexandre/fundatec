@@ -11,3 +11,7 @@
     padding: 15px;
     text-align: left;
 }
+
+.tarefas:nth-child(even) {
+    background-color: greenyellow;
+}
