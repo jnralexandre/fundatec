@@ -1,9 +1,13 @@
 #tarefas {
-    text-align: center;
     width: 50%;
     margin: 0 auto;
 }
 
 .tarefas {
-    border: 10px solid purple;
+    border-style: solid;
+    border-width: 3px;
+    border-color: greenyellow;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
 }

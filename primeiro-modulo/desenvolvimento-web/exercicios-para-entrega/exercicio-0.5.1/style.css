@@ -1,13 +1,18 @@
 .links {
     color: white;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 50px;
     margin: 5px;
 }
 
+.links:hover {
+    font-weight: bold;
+}
+
 #minhas-tarefas {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #pendentes {
