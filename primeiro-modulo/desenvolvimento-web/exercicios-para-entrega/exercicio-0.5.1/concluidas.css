@@ -18,6 +18,11 @@
     color: white;
 }
 
+.tarefas:hover:nth-child(odd) {
+    background-color: white;
+    transform: scale(1.1);
+}
+
 .tarefas:hover {
     background-color: #0CA789;
     transform: scale(1.1);
