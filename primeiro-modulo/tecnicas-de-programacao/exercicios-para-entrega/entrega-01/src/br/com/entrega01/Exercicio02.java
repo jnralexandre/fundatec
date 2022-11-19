@@ -1,45 +1,55 @@
 package br.com.entrega01;
 
+import java.util.Scanner;
+
 public class Exercicio02 {
 
     public static void main(String[] args) {
-        int[] arrayA = new int[20];
+        System.out.println("Por favor, informe um número inteiro para definir o tamanho do nosso array: ");
+        Scanner teclado = new Scanner(System.in);
+        int tamanhoArray = teclado.nextInt();
 
-        arrayA[0] = -15;
-        arrayA[1] = +9;
-        arrayA[2] = +17;
-        arrayA[3] = -2;
-        arrayA[4] = +20;
-        arrayA[5] = -16;
-        arrayA[6] = +11;
-        arrayA[7] = -6;
-        arrayA[8] = +1;
-        arrayA[9] = -18;
-        arrayA[10] = -5;
-        arrayA[11] = -3;
-        arrayA[12] = +14;
-        arrayA[13] = -1;
-        arrayA[14] = +13;
-        arrayA[15] = +4;
-        arrayA[16] = +7;
-        arrayA[17] = -20;
-        arrayA[18] = -7;
-        arrayA[19] = -8;
+        System.out.println("Agora vamos popular o nosso array!");
 
-        int quantidadePositivosArray = 0;
-        int quantidadeNegativosArray = 0;
+        int[] arrayCliente = new int[tamanhoArray];
 
-        for (int i = 0; i < arrayA.length; i++) {
-            if (arrayA[i] > 0) {
-                quantidadePositivosArray++;
-            } else {
-                quantidadeNegativosArray++;
-            }
+        int maiorValorArray = 0;
+        int menorValorArray = 0;
+        int somaValoresArray = 0;
+        int somaValoresAcimaMediaArray = 0;
 
-            System.out.println(arrayA[i]);
+        for (int i = 0; i < arrayCliente.length; i++) {
+            System.out.println("Informe um número inteiro para adicionar ao nosso array: ");
+            arrayCliente[i] = teclado.nextInt();
         }
 
-        System.out.printf("A quantidade de números positivos dentro do arrray é: %d%nA quantidade de números negativos dentro do arrray é: %d", quantidadePositivosArray, quantidadeNegativosArray);
+        for (int i = 0; i < arrayCliente.length; i++) {
+            maiorValorArray = arrayCliente[0];
+            menorValorArray = arrayCliente[0];
+
+            somaValoresArray += arrayCliente[i];
+
+            if (arrayCliente[i] > maiorValorArray) {
+                maiorValorArray = arrayCliente[i];
+            }
+
+            if (arrayCliente[i] < menorValorArray) {
+                menorValorArray = arrayCliente[i];
+            }
+        }
+
+        double mediaValoresArray = somaValoresArray / tamanhoArray;
+
+        for (int i = 0; i < arrayCliente.length; i++) {
+            if (arrayCliente[i] > mediaValoresArray) {
+                somaValoresAcimaMediaArray += 1;
+            }
+        }
+
+        System.out.printf("a) O maior valor é: %d%n", maiorValorArray);
+        System.out.printf("c) O menor valor é: %d%n", menorValorArray);
+        System.out.printf("e) A média dos valores presentes no array é: %.2f%n", mediaValoresArray);
+        System.out.printf("f) O número de valores acima da média dentro do array é: %d%n", somaValoresAcimaMediaArray);
     }
 
 }
