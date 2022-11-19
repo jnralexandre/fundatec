@@ -12,7 +12,7 @@ public class Exercicio01 {
 
         int[] arrayCliente = new int[tamanhoArray];
 
-        System.out.println("Agora vamos popular o nosso array.");
+        System.out.println("Agora vamos popular o nosso array!");
 
         for (int i = 0; i < arrayCliente.length; i++) {
             System.out.println("Informe um número inteiro para adicionar ao nosso array: ");
