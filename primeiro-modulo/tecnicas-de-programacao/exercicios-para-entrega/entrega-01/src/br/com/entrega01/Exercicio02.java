@@ -14,7 +14,9 @@ public class Exercicio02 {
         int[] arrayCliente = new int[tamanhoArray];
 
         int maiorValorArray = 0;
+        int posicaoMaior = 0;
         int menorValorArray = 0;
+        int posicaoMenor = 0;
         int somaValoresArray = 0;
         int somaValoresAcimaMediaArray = 0;
 
@@ -24,18 +26,22 @@ public class Exercicio02 {
         }
 
         for (int i = 0; i < arrayCliente.length; i++) {
-            maiorValorArray = arrayCliente[0];
-            menorValorArray = arrayCliente[0];
-
-            somaValoresArray += arrayCliente[i];
+            if (i == 0) {
+                maiorValorArray = arrayCliente[i];
+                menorValorArray = arrayCliente[i];
+            }
 
             if (arrayCliente[i] > maiorValorArray) {
                 maiorValorArray = arrayCliente[i];
+                posicaoMaior = i;
             }
 
             if (arrayCliente[i] < menorValorArray) {
                 menorValorArray = arrayCliente[i];
+                posicaoMenor = i;
             }
+
+            somaValoresArray += arrayCliente[i];
         }
 
         double mediaValoresArray = somaValoresArray / tamanhoArray;
@@ -47,7 +53,9 @@ public class Exercicio02 {
         }
 
         System.out.printf("a) O maior valor é: %d%n", maiorValorArray);
+        System.out.printf("b) O índice do maior valor é: %d%n", posicaoMaior);
         System.out.printf("c) O menor valor é: %d%n", menorValorArray);
+        System.out.printf("d) O índice do menor valor é: %d%n", posicaoMenor);
         System.out.printf("e) A média dos valores presentes no array é: %.2f%n", mediaValoresArray);
         System.out.printf("f) O número de valores acima da média dentro do array é: %d%n", somaValoresAcimaMediaArray);
     }
