@@ -18,7 +18,7 @@ public class Exercicio05 {
             if (arrayA[i] == i) {
                 System.out.println("O valor informado e a posição do array são iguais.");
             } else {
-                System.out.println("O valor informado e a posição do array não são iguais.";
+                System.out.println("O valor informado e a posição do array não são iguais.");
             }
         }
     }
