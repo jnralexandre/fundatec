@@ -1,4 +1,4 @@
-package br.com.slide01orientacaoobjetos;
+package br.com.slide01orientacaoobjetos.br.com.slide01orientacaoobjetos;
 
 public class Aluno {
 
