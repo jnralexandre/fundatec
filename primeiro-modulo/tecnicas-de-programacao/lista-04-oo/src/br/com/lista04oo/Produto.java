@@ -1,11 +1,11 @@
-package br.com.lita04oo;
+package br.com.lista04oo;
 
 public class Produto {
 
     private String nome;
     private String descricao;
     private Double valorUnitario;
-    private Double quantidade;
+    private Integer quantidade;
 
     public String getNome() {
         return nome;
@@ -31,11 +31,11 @@ public class Produto {
         this.valorUnitario = valorUnitario;
     }
 
-    public Double getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(Double quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 

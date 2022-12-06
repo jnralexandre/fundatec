@@ -1,9 +1,8 @@
-package br.com.lita04oo;
+package br.com.lista04oo;
 
 import java.util.List;
 
 public class PedidoVenda {
-
     private FormaPagamento formaPagamento;
     private Frete frete;
     private Cliente cliente;
@@ -66,6 +65,25 @@ public class PedidoVenda {
 
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
+    }
+
+    public String validarProdutos() {
+        return "carro";
+    }
+
+    public Double getValorTotal() {
+        Double valorTotal = 0.0;
+        for (int i = 0; i < produtos.size(); i++) {
+            Produto produto = produtos.get(i);
+            valorTotal = valorTotal + produto.getValorUnitario();
+        }
+
+        valorTotal = valorTotal + frete.getValorFrete();
+        return valorTotal;
+    }
+
+    public Double ValorUnitario() {
+        return 0.0;
     }
 
 }

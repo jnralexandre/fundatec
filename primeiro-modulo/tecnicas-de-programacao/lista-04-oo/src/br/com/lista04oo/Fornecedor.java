@@ -1,4 +1,4 @@
-package br.com.lita04oo;
+package br.com.lista04oo;
 
 public class Fornecedor {
 
