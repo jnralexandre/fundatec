@@ -1,0 +1,10 @@
+.barra-navegacao {
+    background-color: #242526;
+}
+
+.botao-navegacao {
+    height: 20px;
+    width: 20px;
+    border-radius: 30px;
+    padding: 0px 16px 0px 4px;
+}
