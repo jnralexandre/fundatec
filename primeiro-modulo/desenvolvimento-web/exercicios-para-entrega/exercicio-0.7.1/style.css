@@ -5,26 +5,35 @@ body, html {
 
 .site {
     height: 100%;
-    background-color: #313233;
+    background-color: #1c1e1f;
 }
 
 .barra-navegacao {
     background-color: #242526;
+    height: 55px;
+    border-bottom: solid 1px grey;
 }
 
 .botao-navegacao {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 25px;
     padding: 0px 16px 0px 4px;
+    background-color: #FFFFFF1A;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
 }
 
 .div-direita {
+    height: 55px;
     width: fit-content;
     margin-left: auto;
 }
 
 svg {
-    padding-left: 10px;
+    height: 18px;
+    padding: 8px;
+    fill: white;
 }
 
