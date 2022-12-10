@@ -17,6 +17,8 @@ public class Application {
         System.out.println("Ano de lançamento: ");
         carro.setAno(teclado.nextInt());
 
+        teclado.nextLine();
+
         System.out.println("Cor: ");
         carro.setCor(teclado.nextLine());
 
@@ -29,23 +31,40 @@ public class Application {
         System.out.println("Número de marchas: ");
         carro.setNumeroMarchas(teclado.nextInt());
 
-        for (int i = 0; i < carro.getVelocidadeMaxima(); i++) {
-            carro.acelerar();
+        teclado.nextLine();
+
+        System.out.println("Para acelerar o carro, digite A: ");
+        String acelerar = teclado.nextLine();
+
+        if (acelerar.equalsIgnoreCase("A")) {
+            for (int i = 0; i < carro.getVelocidadeMaxima(); i++) {
+                carro.acelerar();
+            }
+
+            System.out.println("Velocidade atual: " + carro.getVelocidadeAtual());
         }
 
-        System.out.println(carro.getVelocidadeAtual());
+        System.out.println("Para aumentar a marcha do carro, digite B: ");
+        String aumentarMarcha = teclado.nextLine();
 
-        for (int i = 0; i < carro.getNumeroMarchas(); i++) {
-            carro.aumentarMarcha();
+        if (aumentarMarcha.equalsIgnoreCase("B")) {
+            for (int i = 0; i < carro.getNumeroMarchas(); i++) {
+                carro.aumentarMarcha();
+            }
+
+            System.out.println("Marcha atual: " + carro.getMarchaAtual());
         }
 
-        System.out.println(carro.getMarchaAtual());
+        System.out.println("Para reduzir a marcha do carro, digite C: ");
+        String reduzirMarcha = teclado.nextLine();
 
-        for (int i = 0; i < carro.getNumeroMarchas(); i++) {
-            carro.reduzirMarcha();
+        if (reduzirMarcha.equalsIgnoreCase("C")) {
+            for (int i = 0; i < carro.getNumeroMarchas(); i++) {
+                carro.reduzirMarcha();
+            }
+
+            System.out.println("Marcha atual: " + carro.getMarchaAtual());
         }
-
-        System.out.println(carro.getMarchaAtual());
     }
 
 }
