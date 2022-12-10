@@ -18,7 +18,7 @@ body, html {
     height: 40px;
     width: 40px;
     border-radius: 25px;
-    padding: 0px 16px 0px 4px;
+    padding: 0px;
     background-color: #FFFFFF1A;
     border: none;
     cursor: pointer;
@@ -36,4 +36,41 @@ svg {
     padding: 8px;
     fill: white;
 }
+
+.sino-notificacao {
+    position: absolute;
+    height: 15px;
+    width: 22px;
+    border-radius: 8px;
+    margin-top: 4px;
+    padding: 0px;
+    margin-left: -20px;
+    background-color: rgb(208, 70, 70);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.conta-dropdown {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 0px;
+    margin-left: -15px;
+    background-color: #242526;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.icone-flecha {
+    height: 9px;
+    padding: 2px;
+    margin-top: 1px;
+    fill: white;
+}
+
+
 
