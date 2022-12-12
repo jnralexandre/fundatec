@@ -13,19 +13,26 @@ public class Carro {
     private int marchaAtual;
 
     public void reduzirMarcha() {
-        if (marchaAtual >= 1) {
-            marchaAtual = marchaAtual - 1;
+        marchaAtual = marchaAtual - 1;
+
+        if (marchaAtual < 1) {
+            marchaAtual = 1;
         }
     }
 
     public void aumentarMarcha() {
-        if (marchaAtual < numeroMarchas)
-            marchaAtual += 1;
+        marchaAtual += 1;
+
+        if (marchaAtual > numeroMarchas) {
+            marchaAtual = numeroMarchas;
+        }
     }
 
     public void acelerar() {
-        if (velocidadeAtual < velocidadeMaxima)
-            velocidadeAtual += 1;
+        velocidadeAtual += 1;
+
+        if (velocidadeAtual > velocidadeMaxima)
+            velocidadeAtual = velocidadeMaxima;
     }
 
     public int getMarchaAtual() {
