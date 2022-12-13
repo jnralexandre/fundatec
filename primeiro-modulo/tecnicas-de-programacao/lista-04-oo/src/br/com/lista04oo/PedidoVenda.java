@@ -1,5 +1,6 @@
 package br.com.lista04oo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PedidoVenda {
@@ -10,6 +11,62 @@ public class PedidoVenda {
     private String dataVenda;
     private String status;
     private List<Produto> produtos;
+
+    public List<Produto> filtrarProdutosPorNome(String nomeInformado) {
+        List<Produto> filtrados = new ArrayList<>();
+
+        for (Produto produto : produtos) {
+            if (produto.getNome().equalsIgnoreCase(nomeInformado)) {
+                filtrados.add(produto);
+            }
+        }
+
+        return filtrados;
+    }
+
+    public List<Produto> filtrarProdutosPorValor(Double valorInformado) {
+        List<Produto> filtrados = new ArrayList<>();
+
+        for (Produto produto : produtos) {
+            if (produto.getValorUnitario() > valorInformado) {
+                filtrados.add(produto);
+            }
+        }
+
+        return filtrados;
+    }
+
+    public void adicionarProduto(Produto novoProduto) {
+        boolean jaAdicionado = false;
+
+        for (Produto produto : produtos) {
+            if (produto.getNome().equalsIgnoreCase(novoProduto.getNome()) && produto.getDescricao().equalsIgnoreCase(novoProduto.getDescricao())) {
+                jaAdicionado = true;
+                break;
+            }
+        }
+
+        if (jaAdicionado) {
+            System.out.println(novoProduto.getNome() + " - " + novoProduto.getDescricao() + "Já adicionado");
+        } else {
+            produtos.add(novoProduto);
+        }
+    }
+
+    public Double getValorTotal() {
+        return getValorUnitario() + frete.getValorFrete();
+    }
+
+    public Double getValorUnitario() {
+        Double valorUnitario = 0.0;
+
+        for (int i = 0; i < produtos.size(); i++) {
+            Produto produto = produtos.get(i);
+            valorUnitario += produto.getValorUnitario();
+        }
+
+        return valorUnitario;
+    }
 
     public FormaPagamento getFormaPagamento() {
         return formaPagamento;
@@ -69,21 +126,6 @@ public class PedidoVenda {
 
     public String validarProdutos() {
         return "carro";
-    }
-
-    public Double getValorTotal() {
-        Double valorTotal = 0.0;
-        for (int i = 0; i < produtos.size(); i++) {
-            Produto produto = produtos.get(i);
-            valorTotal = valorTotal + produto.getValorUnitario();
-        }
-
-        valorTotal = valorTotal + frete.getValorFrete();
-        return valorTotal;
-    }
-
-    public Double ValorUnitario() {
-        return 0.0;
     }
 
 }
