@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+}
+
+.chat {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #292929;
+    border-radius: 10px;
+}
+
+:root {
+    --cor-padraocolor: white;
+}
+
+.header {
+    height: 55px;
+    border-bottom: dotted 1px grey;
+    border-radius: 10px;
+}
+
+.div-direita-header {
+    position: absolute;
+    top: 46px;
+    right: 200px;
+}
+
+.titulo {
+    position: relative;
+}
+
+h1 {
+    color: var(--cor-padraocolor);
+    margin-left: 15px;
+}
+
+.botao-opcoes-direita-header {
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #292929;
+    padding: 2px 1px 0px 0px;
+    cursor: pointer;
+}
+
+svg {
+    height: 15px;
+    width: 15px;
+    fill: var(--cor-padraocolor);
+}
+
+ul {
+    list-style: none;
+    color: blue;
+    padding-left: 5px;
+}
+
+.recbido-1, .recbido-2, .recbido-3, .recbido-4 {
+    height: 25px;
+    width: fit-content;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: white;
+    padding-top: 5px;
+}
+
+.recbido-1, .recbido-2 {
+    background-color: #657583;
+    margin-right: auto;
+}
+
+.recbido-3, .recbido-4 {
+    background-color: #2e5f4f;
+    margin-left: auto;
+}
