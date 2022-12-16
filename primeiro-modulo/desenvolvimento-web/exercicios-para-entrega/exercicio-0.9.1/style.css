@@ -3,8 +3,8 @@ html, body {
 }
 
 .chat {
-    height: 50%;
-    width: 50%;
+    height: 400px;
+    width: 40%;
     margin: 0 auto;
     background-color: #292929;
     border-radius: 10px;
@@ -21,13 +21,12 @@ html, body {
 }
 
 .div-direita-header {
-    position: absolute;
-    top: 46px;
-    right: 200px;
+    position: relative;
 }
 
 .titulo {
     position: relative;
+    top: 10px;
 }
 
 h1 {
@@ -36,13 +35,21 @@ h1 {
 }
 
 .botao-opcoes-direita-header {
-    height: 20px;
-    width: 20px;
-    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
     border: none;
     background-color: #292929;
-    padding: 2px 1px 0px 0px;
+    position: absolute;
+    padding: 3px;
+    top: 20px;
+    right: 20px;
+}
+
+.botao-opcoes-direita-header:hover {
     cursor: pointer;
+    background-color: #657583;
+    opacity: 70%;
 }
 
 svg {
@@ -53,26 +60,65 @@ svg {
 
 ul {
     list-style: none;
-    color: blue;
     padding-left: 5px;
 }
 
-.recbido-1, .recbido-2, .recbido-3, .recbido-4 {
+.recebido-1, .enviado-1 {
+    position: relative;
     height: 25px;
     width: fit-content;
     border-radius: 10px;
     margin-right: 5px;
     margin-bottom: 5px;
     color: white;
-    padding-top: 5px;
+    padding: 10px 35px 20px 20px;
 }
 
-.recbido-1, .recbido-2 {
+.recebido-1 {
     background-color: #657583;
     margin-right: auto;
 }
 
-.recbido-3, .recbido-4 {
+.enviado-1 {
     background-color: #2e5f4f;
     margin-left: auto;
+}
+
+.check1 {
+    fill: blue;
+}
+
+.check2 {
+    fill: gray;
+}
+
+.check1, .check2 {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.drop, .drop2 {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: #657583;
+    border: none;
+    opacity: 0%;
+}
+
+.drop:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.drop2:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    border: 1px solid darkslategray;
+}
+
+.drop2 {
+    background-color: #2e5f4f;
 }
