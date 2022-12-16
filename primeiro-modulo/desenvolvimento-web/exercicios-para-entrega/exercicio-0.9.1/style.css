@@ -85,11 +85,11 @@ ul {
 }
 
 .check1 {
-    fill: blue;
+    fill: #53bdeb;
 }
 
 .check2 {
-    fill: gray;
+    fill: rgba(233,237,239,0.2);
 }
 
 .check1, .check2 {
@@ -98,7 +98,7 @@ ul {
     bottom: 5px;
 }
 
-.drop, .drop2 {
+.dropdown-1, .dropdown-2 {
     position: absolute;
     right: 5px;
     top: 10px;
@@ -107,18 +107,18 @@ ul {
     opacity: 0%;
 }
 
-.drop:hover {
+.dropdown-1:hover {
     opacity: 100%;
     border-radius: 10px;
     border: 1px solid gray;
 }
 
-.drop2:hover {
+.dropdown-2:hover {
     opacity: 100%;
     border-radius: 10px;
     border: 1px solid darkslategray;
 }
 
-.drop2 {
+.dropdown-2 {
     background-color: #2e5f4f;
 }
